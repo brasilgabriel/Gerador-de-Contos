@@ -14,7 +14,7 @@ body {
 }
 
 form {
-    margin-top: 15vh;
+    margin: 15vh 0;
     padding: 5rem;
     background-color: #f0ddaa;
     border-radius: 20px;
