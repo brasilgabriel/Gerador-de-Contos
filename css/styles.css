@@ -14,7 +14,7 @@ body {
 }
 
 form {
-    margin: 15vh 0;
+    margin: 12vh 0;
     padding: 5rem;
     background-color: #f0ddaa;
     border-radius: 20px;
@@ -37,11 +37,11 @@ form div {
 form div h1 {
     color: #152b3c;
     font-size: 2.7rem;
+    margin-bottom: 1.5rem;
 }
 
 form div input {
     border-color: #152b3c;
-    margin-top: 1.5rem;
     margin-bottom: 2rem;
     padding: 1rem 22%;
     border-radius: 6px;
@@ -67,6 +67,7 @@ form div select {
     padding: 1rem 35%;
     border-radius: 6px;
     cursor: pointer;
+    outline: 0;
 }
 
 form div button {
@@ -83,4 +84,19 @@ form div button {
 
 form div button:hover {
     background-color: #e32d40;
+}
+
+.erro {
+    border-color: red;
+}
+
+.correto {
+    border-color: rgb(9, 206, 42);
+}
+
+.p_erro {
+    color: red;
+    font-size: 13px;
+    font-weight: 650;
+    margin-bottom: 2px;
 }
