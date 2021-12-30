@@ -9,8 +9,10 @@ html {
 
 body {
     background-color: #59b390;
+    background-size: 1920px 1080px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 form {
@@ -100,3 +102,22 @@ form div button:hover {
     font-weight: 650;
     margin-bottom: 2px;
 }
+
+#section_historia {
+    visibility: hidden; 
+    width: 50%;
+    position: absolute;
+    border: 5px solid white;
+    border-radius: 50px;
+    padding: 1.6rem;
+}
+
+#section_historia div p{
+    font-size: 2.4rem;
+    text-align: justify;
+    color: white;
+} 
+
+/* .imagens {
+    background-size: 1920px 1080px;
+} */
