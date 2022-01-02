@@ -5,6 +5,7 @@ const historia = {
     nome: '',
     monstros: '',
     sobreMonstros: '',
+    preposicaoMonstros: '',
     motivacao: '',
     especie: '',
     especiePlural: '',
@@ -21,15 +22,18 @@ const historia = {
 
 const imagens = [];
 
+// função para colocar os dados dentro do objeto e as imagens dentro do array
 export function construindoHistoria(dados) {
 
     historia.nome = dados.nome;
 
+    // dependendo da escolha, os dados vão mudar
     switch (dados.monstros) {
 
         case 'Vampiros':
             historia.monstros = "vampiros";
             historia.sobreMonstros = "criaturas que amam sangue e odeiam alho";
+            historia.preposicaoMonstros = "dos";
             historia.motivacao = "chupar o sangue de";
             imagens.push('../imagens/Vampiros/vampiro-1.jpg')
             imagens.push('../imagens/Vampiros/vampiro-2.jpg');
@@ -42,6 +46,7 @@ export function construindoHistoria(dados) {
         case 'Zumbis':
             historia.monstros = "zumbis";
             historia.sobreMonstros = "criaturas sem qualquer tipo de consciência";
+            historia.preposicaoMonstros = "dos";
             historia.motivacao = "comer o cérebro de";
             imagens.push('../imagens/Zumbis/zumbis-1.jpg')
             imagens.push('../imagens/Zumbis/zumbis-2.jpg');
@@ -56,6 +61,7 @@ export function construindoHistoria(dados) {
         case 'Globins':
             historia.monstros = "globins";
             historia.sobreMonstros = "criaturas que amam aprontar várias travessuras";
+            historia.preposicaoMonstros = "dos";
             historia.motivacao = "assustar";
             imagens.push('../imagens/Globins/globins-1.jpg');
             imagens.push('../imagens/Globins/globins-2.jpg');
@@ -69,6 +75,7 @@ export function construindoHistoria(dados) {
         case 'Dragões':
             historia.monstros = "dragões";
             historia.sobreMonstros = "criaturas muito grandes e monstruosos";
+            historia.preposicaoMonstros = "dos";
             historia.motivacao = "queimar";
             imagens.push('../imagens/Dragões/dragoes-1.jpg');
             imagens.push('../imagens/Dragões/dragoes-2.jpg');
@@ -80,7 +87,8 @@ export function construindoHistoria(dados) {
 
         case 'Bruxas':
             historia.monstros = "bruxas";
-            historia.sobreMonstros = "criaturas horripilante";
+            historia.sobreMonstros = "criaturas horripilantes";
+            historia.preposicaoMonstros = "das";
             historia.motivacao = "enfeitiçar";
             imagens.push('../imagens/Bruxas/bruxas-1.jpg');
             imagens.push('../imagens/Bruxas/bruxas-2.jpg');
@@ -88,7 +96,6 @@ export function construindoHistoria(dados) {
             imagens.push('../imagens/Bruxas/bruxas-4.jpg');
             imagens.push('../imagens/Bruxas/bruxas-5.jpg');
             imagens.push('../imagens/Bruxas/bruxas-6.jpg');
-            imagens.push('../imagens/Bruxas/bruxas-7.jpg');
             break;
     };
 
@@ -219,6 +226,7 @@ export function construindoHistoria(dados) {
             break;
     };
 
+    // chamar duas funções, uma usando a array de imagens e outra usando o objeto com os dados da história
     alterandoImagens(imagens);
     templateHistoria(historia);
 }

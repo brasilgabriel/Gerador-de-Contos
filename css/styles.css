@@ -108,6 +108,7 @@ form div button:hover {
     width: 50%;
     position: absolute;
     border: 5px solid white;
+    box-shadow: 0px 0px 15px 3px black;
     border-radius: 50px;
     padding: 1.6rem;
 }
@@ -116,8 +117,5 @@ form div button:hover {
     font-size: 2.4rem;
     text-align: justify;
     color: white;
+    text-shadow: black 2px 2px 1px;
 } 
-
-/* .imagens {
-    background-size: 1920px 1080px;
-} */

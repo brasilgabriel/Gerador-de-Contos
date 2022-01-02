@@ -2,6 +2,7 @@ import { construindoHistoria } from './salvando-dados-historia.js';
 
 let contadorErros;
 
+// função para ver se o input foi preenchido e ver se alguma opção dos selects foi escolhida
 export function conferirErrosFormulario(dados) {
 
     contadorErros = 0;
@@ -12,6 +13,7 @@ export function conferirErrosFormulario(dados) {
         document.getElementById('p_nome').innerHTML = 'Digite o nome';
         console.log(dados.nome)
 
+        // se tiver um erro, o contador recebe + 1
         contadorErros = contadorErros + 1;
     } else {
         document.getElementById('nome').classList.remove("erro");
@@ -77,6 +79,7 @@ export function conferirErrosFormulario(dados) {
     conferirQuantidadeErros(dados)
 }
 
+// função para verificar se o código pode continuar sendo percorrido
 function conferirQuantidadeErros(dados) {
 
     if (contadorErros == 0) {
